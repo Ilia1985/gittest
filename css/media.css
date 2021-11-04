@@ -1,0 +1,279 @@
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.border-cost:after {
+		content: none;
+
+	}	
+    .main-menu {   
+	    margin-bottom: 0; 
+	    flex-wrap: wrap;
+	}
+	.main-menu a {
+		padding: 13px 5px;
+		
+	}
+	h1 {
+		font: 44px/44px Ubuntu-Light;
+	}	
+	.tarif-block.m2 {
+		margin-top: 0px;
+	}	
+	.tarif-block {
+		margin: 0;
+		margin-top: 35px;
+	}	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	section {
+		padding: 100px 0 75px 0;
+	}
+	.btn-form {
+		
+		width: 100%;
+		max-width: 100%;
+		
+	}	
+	.mb-70{
+		margin-bottom: 15px;
+	}	
+	.mb-50{
+		margin-bottom: 30px;
+	}
+	.mb-100{
+		margin-bottom: 30px;
+	}	
+	.f-col{
+        padding: 0; 
+		margin-bottom: 15px;
+	}	
+	
+	.header-bottom {
+		 margin-top: 0px;
+	}	
+   .mob-menu-btn{
+	   display: block;
+   } 
+	.main-menu {
+		flex-direction: column;
+		background-color: #d3e5f4;
+	   border-radius: 5px 0 0 0;
+       box-shadow: 3px 4px 14.08px 1.92px rgba(6, 59, 98, 0.69);
+	   position: absolute;
+       top: 100%;
+       right: 0;
+       width: calc(100% - 20px);
+       z-index: 700;
+       display: none; 	   
+
+	}   
+	.main-menu.menu-show{
+		display: flex;
+	}
+	
+	.main-menu a{
+		font: 17px/normal Ubuntu-Medium;
+		color: #15456b;	
+		padding: 25px 20px;
+		display: block;
+		text-transform: uppercase;
+		border-bottom: 1px solid #82b3de;
+		
+	}
+	.main-menu a.active,
+	.main-menu a:hover{
+		text-decoration: underline;
+		background: none;
+	}	
+
+
+    #top-doc-block{
+		padding: 15px 0;
+		background: none;
+	}
+	#top-doc-block .text {
+		font: 17px/normal Ubuntu;
+		color: #fff;
+	}	
+	.top-doc-text img {
+		display: none; 
+	}	
+	.top-docs-block{
+		background: url(../img/bg-top-doc-block.jpg) center bottom no-repeat;
+		padding: 15px 20px !important; 
+	}	
+	.video-block .video-btn {
+		width: 50px;
+		height: 50px;
+        background-size: contain;
+
+	}	
+	#top-doc-block-2 {
+		padding: 0px;
+		background-color: #f7f7f7;
+	}	
+	.doc-block-2 {
+		padding: 15px 10px 15px 24px;
+		position: relative;
+	}
+	.doc-block-2 p {
+		font: 15px/normal Ubuntu-Light;
+	}	
+	.doc-block-2:before {
+		height: 150px;
+        top: 20px;
+	}
+	h2 {
+		font: 36px/normal Ubuntu-Light;
+		color: #0768a7;
+		margin: 0px 0 20px 0;
+		text-align: center;
+	}
+	h3{
+		font: 27px/normal Ubuntu-Light;
+		color: #0768a7;
+		margin: 0px 0 20px 0;
+		text-align: center;
+	}		
+	.title1 {
+		font: 27px/normal Ubuntu-Light;
+		color: #0768a7;
+		margin: 0px 0 20px 0;
+		text-align: center;
+	}	
+	#top-doc-block-2 {
+
+		background-color: #ffffff;
+	}	
+	#consult{
+		padding: 30px 0 50px 0;
+	}
+	#consult:before{
+		content: none;
+	}	
+    #consult h3{
+		max-width: 200px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}	
+	.form-row {
+		margin: 0 -10px 0 -10px;
+		margin-bottom: 0px; 
+	}	
+	.form-row .f-col {
+		margin-bottom: 15px;
+		flex-grow: 1;
+	}	
+	.btn-form {
+		margin-top: 0px;
+	}
+	#search-block .title {
+		font: 23px/normal Ubuntu-Light;
+
+	}	
+	#form-consult input {		
+		font: 18px/normal Ubuntu-Light;
+		text-align: center;
+		padding: 20px 10px;
+	}
+	#form-consult input::placeholder{
+		font: 18px/normal Ubuntu-Light;
+		color: #9abad3;	
+	}	
+	.form-row1 {
+		margin: 0;
+
+	}	
+	#form-search {
+		padding: 0 10px;
+		border-radius: 5px;
+	}	
+	#form-search input {
+		padding: 12px 22px 12px 0px;
+
+	}	
+	
+	#advantage{
+		text-align: center;
+	}
+	#advantage .title1{
+		margin: 20px 0 20px 0;
+	}
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px) {
+
+	.header-top .phone {
+		font: 22px/25px Ubuntu-Light;
+		color: #008ece;
+		margin-right: 10px;
+	}
+	.container {
+
+		padding-right: 7px;
+		padding-left: 7px;
+
+	}	
+	.row {
+
+		margin-right: -7px;
+		margin-left: -7px;
+	}
+	.row > div{
+		padding-right: 7px;
+		padding-left: 7px;
+	}	
+	header .header-top-block{
+		padding: 0;
+	}
+	.header-top-block .row{
+		margin: 0;  
+	}
+	.header-top-block .col-12{
+		padding: 0;
+	}
+	a.single-in {
+		font: 15px/16px Ubuntu;
+		padding: 17px 25px;
+
+	}	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .header-top .support{
+		display: none;
+	}
+	.sect-bg1:before{
+		
+		border-left: 100vw solid #d3e5f4;
+		border-bottom: 15.6vw solid transparent;
+        border-top: 4.6vw solid #d3e5f4;
+		
+
+	}
+	.sect-bg1:after{
+		
+		border-right: 43.7vw solid #f4f7f9;
+		border-bottom: 24vw solid transparent;	
+		
+	}	
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+

@@ -1,0 +1,517 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	min-height: 100%;
+	font: 15px/normal Ubuntu-Light, Open-Sans;
+	background-color: #fff;
+	color: #45484a;
+}
+#toTop {
+	width:60px;
+	height: 60px;
+    z-index: 800;
+	text-align:center;
+	padding:5px;
+	position:fixed;
+	bottom:0px; /* отступ кнопки от нижнего края страницы*/
+	right:0px;
+	cursor:pointer;
+	display:none;
+	background: #80b5df url(../img/arrow-top.png) center no-repeat
+}
+
+a{
+	color: #4388a6;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+aside, nav, section, main, header, footer{
+	display: block;
+}
+h1{
+	font: 64px/64px Ubuntu-Light;
+	margin: 20px 0 20px 0;
+	color: #fff;
+}
+h2,h3{
+	font: 50px/65px Ubuntu-Light;
+	color: #0768a7;
+	margin: 0px 0 80px 0;
+	text-align: center;
+	
+}
+.title1{
+	font: 24px/23px Ubuntu-Light;
+	color: #0768a7;
+	margin: 0px 0 50px 0;
+}
+h4{
+	font: 20px/24px Ubuntu-Medium;
+	color: #4388a6;
+	margin: 0px 0 16px 0;
+}
+p{
+	margin-bottom: 15px;
+}
+.txt-up{
+	text-transform: uppercase;
+}
+.hidden{
+	display: none !important;
+}
+section{
+	padding: 100px 0 120px 0;
+}
+.sect-bg1{
+	/*background: url(../img/bg-sect2.png) right top no-repeat, url(../img/bg-sect1.png) left top no-repeat;*/
+	position: relative;
+}
+.sect-bg1:before{
+	content: ' ';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+
+
+	width: 0; 
+	height: 0;
+	border-left: 54vw solid #d3e5f4;
+	border-bottom: 5.3vw solid transparent;
+
+	
+
+}
+.sect-bg1:after{
+	content: ' ';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 15;
+	width: 0; 
+	height: 0;
+	border-right: 41vw solid #f4f7f9;
+	border-bottom: 12.7vw solid transparent;	
+	
+}
+.mob-menu-btn {
+	display: none;
+    width: 46px;
+   /* border-top: 5px solid #15456b;
+    border-bottom: 16px double #15456b;*/
+    height: 27px;
+    box-sizing: border-box;
+    padding: 0;
+	background: url(../img/mob-menu-btn.png) center no-repeat;
+    margin-right: 25px;
+}
+/** header **/
+header{
+	margin-bottom: 20px;
+}
+
+.phone{
+	font: 27px/30px Ubuntu-Light;
+	color: #008ece;
+}
+a.phone{
+	font: 27px/30px Ubuntu-Light;
+	color: #008ece;
+	margin-right: 40px;
+
+}
+a.support{
+	font: 14px/16px Ubuntu;
+	text-decoration: underline;
+	margin-right: 30px;
+}
+a.single-in{
+	font: 15px/16px Ubuntu;
+    padding: 17px 30px;
+	color: #fff;
+	background-color: #93c0e3;
+}
+.header-bottom{
+	margin-top: -10px;
+	
+}
+.logo-link{
+
+	display: inline-block;
+}
+.main-menu{
+	list-style: none;
+	width: 100%;
+	display: flex;
+}
+.main-menu li{
+	display: block;
+}
+.main-menu a{
+	font: 14px/14px Ubuntu-Medium;
+	color: #15456b;	
+	padding: 20px 5px;
+	display: block;
+	text-transform: uppercase;
+	
+}
+.main-menu a.active,
+.main-menu a:hover{
+	text-decoration: none;
+	background: url(../img/menu-link-bg.jpg) center bottom no-repeat;
+}
+
+/** top-doc-block **/
+#top-doc-block{
+	background: url(../img/bg-top-doc-block.jpg) center bottom no-repeat;
+	background-size: cover;
+	padding: 50px 0;
+}
+.top-doc-text img{
+	margin-right: 30px;
+}
+#top-doc-block .text{
+	font: 21px/normal Ubuntu;
+	color: #fff;
+}
+.video-block{
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	height: 0;
+	padding-bottom: 59%;
+}
+.video-block video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	outline: none;
+}
+.video-block .video-btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url(../img/player1.png) center no-repeat;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+/** top-doc-block-2 **/
+#top-doc-block-2{
+	padding: 20px 0;
+	background-color: #f7f7f7;
+}
+.doc-block-2{
+	padding: 30px;
+	position: relative;
+}
+.doc-block-2:before{
+    position: absolute;
+    content: ' ';
+    display: block;
+    height: 90px;
+    width: 7px;
+    background-color: #135e92;
+    left: 0;
+    top: 42px;
+}
+
+
+.doc-title{
+	font: 18px/25px Ubuntu;
+	color: #16466b;
+	margin-bottom: 10px;
+	display: block;
+	text-decoration: underline;
+}
+.doc-block-2 a{
+	color: #16466b;
+	text-decoration: underline;
+}
+.doc-block-2 p{
+	font: 18px/25px Ubuntu-Light;
+	color: #16466b;
+	margin: 0;
+} 
+/** consult **/
+#consult{
+    position: relative;
+	
+}
+#consult:before{
+	content: ' ';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 0; 
+	height: 0;
+	border-left: 27vw solid #d3e5f4;
+	border-bottom: 13vw solid transparent;
+
+	
+
+}
+
+.form-row1{
+	margin: 0 -10px 0 -10px;
+	justify-content: center;
+    display: flex;
+    flex-wrap: wrap;	
+}
+.f-col{
+	padding: 0 10px;
+	flex-grow: 1;
+	margin-bottom: 30px;
+}
+#form-consult input{
+	display: block;
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid #80b5df;
+	width: 100%;
+	box-sizing: border-box;
+	font: 20px/normal Ubuntu;
+	color: #000; 
+	outline: none;
+	
+}
+
+#form-consult input::placeholder{
+	font: 20px/normal Ubuntu-Light;
+	color: #9abad3;	
+}
+.mb-70{
+	margin-bottom: 70px;
+}
+.btn-form{
+	font: 28px/normal Ubuntu-Light;
+	color: #fff !important;
+    display: block;
+	width: 100%;
+    max-width: 410px;
+	box-sizing: border-box;
+	padding: 20px;
+	border: none;
+	background-color: #80b5df;
+	margin: 0 auto;
+	text-align: center;
+}
+/** search-block **/
+#search-block{
+	padding: 60px 0;
+	background-color: #f7f7f7;
+}
+#search-block .title{
+	font: 36px/normal Ubuntu-Light;
+	color: #545050;
+	text-align: center;
+	margin-bottom: 25px;
+}
+#form-search{
+	padding: 0 20px;
+	border-radius: 22px;
+	border: 1px solid #b3b8ba;
+	background-color: #fff;
+	position: relative;
+	margin-bottom: 15px;
+}
+#form-search input{
+	padding: 12px 15px 12px 5px;
+	display: block;
+	font: 18px/normal Ubuntu-Light; 
+	color: #545050;
+	border: none;
+	width: 100%;
+	outline: none;
+	
+}
+#form-search input::placeholder{
+	color: #b2afaf;
+}
+#form-search button{
+	border: none;
+	display: block;
+	background-color: #fff;
+	background: url('../img/search.jpg') center no-repeat;
+    width: 40px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+	right: 0px;	
+}
+#search-block  .text{
+	font: 15px/normal Ubuntu-Light; 
+	color: #0e0d0d;
+	text-align: center;
+	margin: 0;
+}
+.asc{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    font: 12px/12px Ubuntu-Light;
+    border: 1px solid #c6c9cb;
+    color: #c6c9cb;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    font-weight: 600;
+	
+}
+/** advantage **/
+#advantage {
+	
+}
+.mb-50{
+	margin-bottom: 50px;
+}
+.mb-100{
+	margin-bottom: 100px;
+}
+.more-link:hover,
+.more-link{
+	display: inline-block;
+	padding: 5px 20px 5px 0;
+	text-decoration: none;
+	position: relative;
+	background: url('../img/more-link-border.png') left bottom repeat-x;
+}
+.more-link::after{
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #8cb4c7;
+    right: 0;
+    top: 10px;
+}
+.more-text{
+   display: none !important;	
+   
+}
+.show-text-more .more-text{
+	display: block !important;
+}
+.show-text-more .more-link::after{
+     border-top: none;
+	border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid #8cb4c7;
+    right: 0;
+    top: 10px;
+}
+/** cost **/
+
+#cost{
+	
+}
+.tarif-block{
+	margin: 0 -15px;
+	margin-top: 35px;
+	flex-wrap: wrap;
+	
+}
+.tarif-item{
+	padding: 10px 15px;
+	box-sizing: border-box;
+	margin-right: 14px;
+	position: relative;
+}
+.tarif-item .price{
+	font: 20px/24px Ubuntu;
+	font-weight: bold;
+	color: #4388a6;
+	margin-bottom: 30px;
+}
+.tarif-item .tarif{
+	font: 14px/24px Ubuntu-Light;
+}
+.tarif-item .tex{
+	font: 12px/12px Ubuntu-Light;
+	color: #45484a;
+	min-width: 160px;
+	display: inline-block;	
+}
+.tarif-item 	.discount{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 15px;
+	z-index: 100;
+	background-color: #e9f1f7;
+
+}
+.tarif-item:hover{
+	background-color: #e9f1f7;
+
+	z-index: 100;
+}
+.tarif-item:hover 	.discount{
+    max-height: 60px;
+	transition: max-height .5s;
+}
+
+.disc-title{
+	font: 18px/28px Ubuntu-Light;
+	color: #6298b2;
+	display: block;
+}
+.disc-value{
+	font: 24px/28px Ubuntu;
+	font-weight: bold;	
+	color: #6298b2;
+	display: block;
+}
+.tarif-block.m2{
+	margin-top: 72px;
+}
+.help:hover,
+.help{
+	width: 18px;
+	height: 18px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font: 18px/18px Ubuntu-Medium;
+	color: #fff;
+    background-color: #a7bfd3;
+    border-radius: 50%;	
+	margin: 0 5px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.border-cost:after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 100%;
+    border-right: 1px solid #bbd2e5;
+    right: 15px;
+    top: 0;
+}
+
